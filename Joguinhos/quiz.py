@@ -1,5 +1,5 @@
 print('=' * 40)
-print('         QUIZ GAMER E NERD!         ')
+print('         QUIZ GEEK!         ')
 print('  Teste seus conhecimentos e divirta-se!  ')
 print('=' * 40)
 print('\nVamos começar!\n')
