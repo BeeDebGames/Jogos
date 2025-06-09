@@ -1,23 +1,33 @@
-print('O número é primo!')
-resposta = int(input('Escreva um número^^ :'))
-if resposta != 23:
-    print('Resposta errada... Próxima dica :3 :')
-else:
-    print('Wow que sorte! Você acertou de primeira! ÒwÓ ')
-    exit()    
-print()
-print('O algarismo presente na casa da unidade desse número é também um número primo!')
-resposta = int(input('Escreva um número^^ :'))
-while resposta !=23:
-    print('Tente outra vez! OwO')
-    resposta2 = int(input('Pense bem e screva um número novamente! Não desista <3 :'))
-    if resposta2 >23:
-        print('O número é menor que esse ^^')
-    else:
-        print('O número é maior que esse^^')
-    resposta2 = int(input('Pense bem e escreva um número novamente! Não desista <3 :'))
-    if resposta2 != 23:
-        print()
-    else:
-        print('Parabéns! Você consegiu achar o número secreto!!ÒwÓ')
-        break
+import random
+
+def jogar():
+    numero_secreto = random.randint(1, 100)
+    tentativas = 0
+    acertou = False
+
+    print('Olá! ^.^ Vamos jogar um jogo de adivinhação!')
+    print('Estou pensando em um número entre 1 e 100. Tente adivinhar qual é! ;D')
+
+    while not acertou:
+        try:
+            resposta = int(input('Escreva um número^^ : '))
+            tentativas += 1
+
+            if resposta < numero_secreto:
+                print('Resposta muito baixa... Próxima dica :3 :')
+                print('O número é maior que esse ^^')
+            elif resposta > numero_secreto:
+                print('Resposta muito alta... Próxima dica :3 :')
+                print('O número é menor que esse ^^')
+            else:
+                acertou = True
+                print(f'Wow que sorte! Você acertou em {tentativas} tentativas! ÒwÓ ')
+                
+        except ValueError:
+            print('Opa! Parece que você não digitou um número válido. Tente de novo! >w<')
+
+    print('\nParabéns! Você conseguiu achar o número secreto!!ÒwÓ')
+    print('Obrigado por jogar! <3')
+
+if __name__ == "__main__":
+    jogar()
