@@ -15,7 +15,7 @@ while resposta !=23:
         print('O número é menor que esse ^^')
     else:
         print('O número é maior que esse^^')
-    resposta2 = int(input('Pense bem e screva um número novamente! Não desista <3 :'))
+    resposta2 = int(input('Pense bem e escreva um número novamente! Não desista <3 :'))
     if resposta2 != 23:
         print()
     else:
