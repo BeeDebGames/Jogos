@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    color: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #2c2c2c;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #f9f9f9;
+}
+
+.forca-desenho-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 250px;
+}
+
+.forca-svg {
+    width: 200px;
+    height: 250px;
+    box-sizing: content-box;
+}
+
+.boneco-parte {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.boneco-parte.visivel {
+    visibility: visible;
+    opacity: 1;
+}
+
+.forca-status {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.palavra-exibida {
+    font-size: 1.5em; 
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+
+.letras-chutadas {
+    font-style: italic;
+    color: #aaa;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.botao-enviar {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-enviar:hover {
+    background-color: #1976D2;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.resultado.acerto {
+    background-color: #2e7d32;
+    color: #c8fdd8;
+}
+
+.resultado.erro {
+    background-color: #c62828;
+    color: #ffcdd2;
+}
+
+.mensagem-final {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.mensagem-final.vitoria {
+    color: #2e7d32;
+}
+
+.mensagem-final.derrota {
+    color: #c62828;
+}
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #777;
+}

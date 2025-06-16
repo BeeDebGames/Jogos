@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+    color: #f1f1f1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #2c2c2c;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #f9f9f9;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .botao-enviar {
+    width: 60%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-enviar:hover {
+    background-color: #45a049;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .resultado.acerto {
+    background-color: #2e7d32;
+    color: #c8fdd8;
+  }
+  
+  .resultado.erro {
+    background-color: #c62828;
+    color: #ffcdd2;
+  }
+  
+  .links {
+    margin-top: 25px;
+  }
+  
+  .botao-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #777;
+  }
+  
