@@ -8,22 +8,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    background-image: url(./images/Fundo\ abelhas.jpg);
 }
 
 .container {
-    background-color: #2c2c2c;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
     width: 100%;
     max-width: 600px;
     text-align: center;
+    background-color: #26272e;
+    box-shadow: 0 0 40px #000000;
+    border: #ffffff solid 2px;
 }
 
 h1 {
     margin-bottom: 10px;
-    font-size: 32px;
+    font-size: 40px;
     color: #f9f9f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .subtitulo {
@@ -39,7 +44,7 @@ h1 {
 .pontuacao-atual {
     font-size: 1.2em;
     font-weight: bold;
-    color: #2196F3;
+    color: #4400ff;
     margin-bottom: 20px;
 }
 
@@ -51,14 +56,15 @@ h1 {
 }
 
 .feedback-resposta.acerto {
-    background-color: #4CAF50; 
-    color: #fff;
+    background-color: #87c98a;
+    color: #ffffff;
 }
 
 .feedback-resposta.erro {
-    background-color: #F44336; 
-    color: #fff;
+    background-color: #d46666;
+    color: #ffffff;
 }
+
 
 h2 {
     font-size: 1.5em;
@@ -72,11 +78,12 @@ h2 {
     gap: 15px;
     align-items: flex-start; 
     margin: 0 auto; 
-    max-width: 80%;
+    width: 500px;
 }
 
 .opcao-label {
-    background-color: #3a3a3a;
+    background-color: #373842;
+    color: #fff;
     padding: 12px 20px;
     border-radius: 8px;
     display: flex;
@@ -84,7 +91,7 @@ h2 {
     width: 100%;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-align: left; 
+    text-align: center; 
 }
 
 .opcao-label:hover {
